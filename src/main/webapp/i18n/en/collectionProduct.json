@@ -1,0 +1,25 @@
+{
+  "dentalApp": {
+    "collectionProduct": {
+      "home": {
+        "title": "Collection Products",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Collection Product",
+        "createOrEditLabel": "Create or edit a Collection Product",
+        "notFound": "No Collection Products found"
+      },
+      "created": "A new Collection Product is created with identifier {{ param }}",
+      "updated": "A Collection Product is updated with identifier {{ param }}",
+      "deleted": "A Collection Product is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Collection Product {{ id }}?"
+      },
+      "detail": {
+        "title": "Collection Product"
+      },
+      "id": "ID",
+      "collectionId": "Collection Id",
+      "productId": "Product Id"
+    }
+  }
+}

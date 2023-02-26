@@ -1,0 +1,49 @@
+{
+  "dentalApp": {
+    "order": {
+      "home": {
+        "title": "Orders",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Order",
+        "createOrEditLabel": "Create or edit a Order",
+        "notFound": "No Orders found"
+      },
+      "created": "A new Order is created with identifier {{ param }}",
+      "updated": "A Order is updated with identifier {{ param }}",
+      "deleted": "A Order is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Order {{ id }}?"
+      },
+      "detail": {
+        "title": "Order"
+      },
+      "id": "ID",
+      "orderCode": "Order Code",
+      "transId": "Trans Id",
+      "paymentStatus": "Payment Status",
+      "totalAmount": "Total Amount",
+      "totalDiscount": "Total Discount",
+      "point": "Point",
+      "userId": "User Id",
+      "payMethod": "Pay Method",
+      "shippingDate": "Shipping Date",
+      "shippingStatus": "Shipping Status",
+      "deliveryCode": "Delivery Code",
+      "name": "Name",
+      "phone": "Phone",
+      "address": "Address",
+      "provincial": "Provincial",
+      "district": "District",
+      "shopifyId": "Shopify Id",
+      "shopifyUserId": "Shopify User Id",
+      "totalWeight": "Total Weight",
+      "fulfillmentStatus": "Fulfillment Status",
+      "gateway": "Gateway",
+      "ward": "Ward",
+      "street": "Street",
+      "fulfillmentDate": "Fulfillment Date",
+      "cancelledAt": "Cancelled At",
+      "cancelReason": "Cancel Reason"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "dentalApp": {
+    "combo": {
+      "home": {
+        "title": "Combos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Combo",
+        "createOrEditLabel": "Create or edit a Combo",
+        "notFound": "No Combos found"
+      },
+      "created": "A new Combo is created with identifier {{ param }}",
+      "updated": "A Combo is updated with identifier {{ param }}",
+      "deleted": "A Combo is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Combo {{ id }}?"
+      },
+      "detail": {
+        "title": "Combo"
+      },
+      "id": "ID",
+      "name": "Name",
+      "price": "Price",
+      "discount": "Discount",
+      "weight": "Weight",
+      "point": "Point",
+      "description": "Description",
+      "liked": "Liked"
+    }
+  }
+}

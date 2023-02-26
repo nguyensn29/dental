@@ -1,0 +1,25 @@
+{
+  "dentalApp": {
+    "migration": {
+      "home": {
+        "title": "Migrations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Migration",
+        "createOrEditLabel": "Create or edit a Migration",
+        "notFound": "No Migrations found"
+      },
+      "created": "A new Migration is created with identifier {{ param }}",
+      "updated": "A Migration is updated with identifier {{ param }}",
+      "deleted": "A Migration is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Migration {{ id }}?"
+      },
+      "detail": {
+        "title": "Migration"
+      },
+      "id": "ID",
+      "migration": "Migration",
+      "batch": "Batch"
+    }
+  }
+}

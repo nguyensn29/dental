@@ -1,0 +1,226 @@
+
+entity Banner {
+	name String required,
+    src String required,
+    isShow Integer required,
+    imgPublicId String
+    
+}
+
+entity Blog {
+	name String required,
+    content String,
+    avatar String,
+    imgPublicId String,
+    categoryId Integer required,
+    isShow Integer required
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Cart {
+	userId Long required,
+	productId Long required,
+	variantId Long,
+    productType Integer required,
+    qty Integer required
+}
+
+entity Category {
+	name String required,
+    type Integer required,
+    icon String,
+    imgPublicId String
+}
+
+/**
+ * Task entity.
+ * @author The JHipster team.
+ */
+entity Collection {
+	shopifyId Long,
+	title String required,
+    description String,
+    handle String
+}
+
+/**
+ * The Employee entity.
+ */
+entity Product (products) {
+	/**
+	* The firstname attribute.
+	*/
+	name String required,
+	point Integer required,
+	description String,
+    liked Integer required,
+    shopifyId Long,
+    vendorId Integer,
+    categoryId Integer,
+    isCombo Integer,
+    discount Double,
+    bought Long required,
+    price Double
+}
+
+entity CollectionProduct(collection_product) {
+  collectionId Long required,
+  productId Long required
+}
+
+entity Combo(combos) {
+	name String required,
+	price Double required,
+    discount Double,
+    weight Integer required,
+    point Integer required,
+	description String,
+    liked Integer required
+}
+
+entity Image(images) {
+	src String required,
+    shopifyId Long,
+    imgPublicId String,
+    isAvatar Integer required,
+    comboId Long,
+    productId Long
+}
+
+entity Message(messages) {
+	userId Long required,
+    channel String,
+    message String required,
+    isRead Integer required
+}
+
+entity Migration (migrations) {
+    migration String required,
+    batch Integer required
+}
+
+entity Order (orders) {
+    orderCode String required,
+    transId String,
+    paymentStatus Integer required,
+    totalAmount Double required,
+    totalDiscount Double required,
+    point Integer required,
+    userId Long,
+    payMethod Integer required,
+    shippingDate Instant,
+    shippingStatus Integer required,
+    deliveryCode String,
+    name String,
+    phone String,
+    address String,
+    provincial String,
+    district String,
+    shopifyId Long,
+    shopifyUserId Long,
+    totalWeight Integer,
+    fulfillmentStatus String,
+    gateway String,
+    ward String,
+    street String,
+    fulfillmentDate Instant,
+    cancelledAt Instant,
+    cancelReason String
+}
+
+entity OrderDetail(order_details) {
+	orderId Integer required,
+    productId Long required,
+    productType Integer required,
+    avatar String,
+    name String,
+    price Double required,
+    point Integer required,
+    qty Integer required,
+    discount Double required,
+    subtotalAmount Double required,
+    totalAmount Double required,
+    variantId Double,
+    shopifyVariantId Long,
+    shopifyProductId Long,
+    shopifyOrderId Long,
+    shopifyId Long
+}
+
+entity ProductUser(product_user) {
+    userId Long required,
+    productId Long required,
+    productType Integer required
+}
+
+entity Rank(ranks) {
+	name String required,
+    turnoverCondition Double required,
+    discount Double required
+}
+
+entity Setting(settings) {
+	name String required,
+    keyName String,
+    value String,
+    rule String,
+    isNumber Integer required,
+    isObject Integer required
+}
+
+entity UserPayment(user_payments) {
+	userId Long required,
+    name String,
+    phone String,
+    adress String,
+    provincial String,
+    district String,
+    ward String,
+    email String,
+    street String
+}
+
+entity User(users) {
+    name String,
+    phone String,
+    adress String,
+    avatar String,
+    imgPublicId String,
+    totalAmountSpent Double required,
+    point Integer required,
+    rankId Long required,
+    email String,
+    type Integer required,
+    channel String,
+    password String,
+    token String,
+    acceptsMarketing Integer required,
+    shopifyId Long
+}
+
+entity Variant(variants) {
+	productId Long required,
+    shopifyId Long,
+    title String required,
+    price Double required,
+    discount Double required,
+    option1 String,
+    option2 String,
+    option3 String,
+    imageId Long
+    weight Integer required,
+    compareAtPrice Double
+}
+
+entity Vendor(vendors) {
+	name String required
+}
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
